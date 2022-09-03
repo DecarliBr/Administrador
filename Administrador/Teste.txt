@@ -1,1 +1,0 @@
-verificando uso do gitignore
