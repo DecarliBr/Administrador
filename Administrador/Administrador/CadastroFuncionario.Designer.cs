@@ -53,8 +53,6 @@ namespace Administrador
             this.TXB_FoneCad = new System.Windows.Forms.TextBox();
             this.TXB_EmailCad = new System.Windows.Forms.TextBox();
             this.CBOX_EstadoCad = new System.Windows.Forms.ComboBox();
-            this.LBL_CargoCad = new System.Windows.Forms.Label();
-            this.CBOX_CargoCad = new System.Windows.Forms.ComboBox();
             this.CHB_ADMorUser = new System.Windows.Forms.CheckBox();
             this.BTN_SalvarCad = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -320,34 +318,6 @@ namespace Administrador
             this.CBOX_EstadoCad.Size = new System.Drawing.Size(59, 29);
             this.CBOX_EstadoCad.TabIndex = 24;
             // 
-            // LBL_CargoCad
-            // 
-            this.LBL_CargoCad.AutoSize = true;
-            this.LBL_CargoCad.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.LBL_CargoCad.Location = new System.Drawing.Point(12, 342);
-            this.LBL_CargoCad.Name = "LBL_CargoCad";
-            this.LBL_CargoCad.Size = new System.Drawing.Size(60, 21);
-            this.LBL_CargoCad.TabIndex = 25;
-            this.LBL_CargoCad.Text = "Cargo";
-            // 
-            // CBOX_CargoCad
-            // 
-            this.CBOX_CargoCad.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.CBOX_CargoCad.FormattingEnabled = true;
-            this.CBOX_CargoCad.Items.AddRange(new object[] {
-            "Gerente",
-            "Analista",
-            "Estoquista",
-            "Recepcionista",
-            "Vendedor",
-            "Operador de Caixa",
-            "Coordenador",
-            "Analista de Suporte"});
-            this.CBOX_CargoCad.Location = new System.Drawing.Point(69, 339);
-            this.CBOX_CargoCad.Name = "CBOX_CargoCad";
-            this.CBOX_CargoCad.Size = new System.Drawing.Size(239, 29);
-            this.CBOX_CargoCad.TabIndex = 26;
-            // 
             // CHB_ADMorUser
             // 
             this.CHB_ADMorUser.AutoSize = true;
@@ -369,6 +339,7 @@ namespace Administrador
             this.BTN_SalvarCad.TabIndex = 29;
             this.BTN_SalvarCad.Text = "Salvar";
             this.BTN_SalvarCad.UseVisualStyleBackColor = true;
+            this.BTN_SalvarCad.Click += new System.EventHandler(this.BTN_SalvarCad_Click);
             // 
             // FRM_CadastroFuncionario
             // 
@@ -377,8 +348,6 @@ namespace Administrador
             this.ClientSize = new System.Drawing.Size(654, 405);
             this.Controls.Add(this.BTN_SalvarCad);
             this.Controls.Add(this.CHB_ADMorUser);
-            this.Controls.Add(this.CBOX_CargoCad);
-            this.Controls.Add(this.LBL_CargoCad);
             this.Controls.Add(this.CBOX_EstadoCad);
             this.Controls.Add(this.TXB_EmailCad);
             this.Controls.Add(this.TXB_FoneCad);
@@ -437,8 +406,6 @@ namespace Administrador
         private System.Windows.Forms.TextBox TXB_FoneCad;
         private System.Windows.Forms.TextBox TXB_EmailCad;
         private System.Windows.Forms.ComboBox CBOX_EstadoCad;
-        private System.Windows.Forms.Label LBL_CargoCad;
-        private System.Windows.Forms.ComboBox CBOX_CargoCad;
         private System.Windows.Forms.CheckBox CHB_ADMorUser;
         private System.Windows.Forms.Button BTN_SalvarCad;
     }

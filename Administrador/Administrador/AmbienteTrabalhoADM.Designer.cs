@@ -31,13 +31,13 @@ namespace Administrador
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.testeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.meuUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.funcionariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroFuncionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenu_SairADM = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenu_ConfiguracoesADM = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenu_ConfUsuarioADM = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenu_ConfFuncionariosADM = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenu_CadastroADM = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenu_CadClienteADM = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenu_CadFuncionarioADM = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +48,7 @@ namespace Administrador
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
-            this.cadastroToolStripMenuItem,
+            this.StripMenu_CadastroADM,
             this.relatoriosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -59,63 +59,63 @@ namespace Administrador
             // arquivoToolStripMenuItem
             // 
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.testeToolStripMenuItem,
-            this.configuraçõesToolStripMenuItem});
+            this.StripMenu_SairADM,
+            this.StripMenu_ConfiguracoesADM});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
             // 
-            // testeToolStripMenuItem
+            // StripMenu_SairADM
             // 
-            this.testeToolStripMenuItem.Name = "testeToolStripMenuItem";
-            this.testeToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.testeToolStripMenuItem.Text = "Sair";
-            this.testeToolStripMenuItem.Click += new System.EventHandler(this.testeToolStripMenuItem_Click);
+            this.StripMenu_SairADM.Name = "StripMenu_SairADM";
+            this.StripMenu_SairADM.Size = new System.Drawing.Size(180, 22);
+            this.StripMenu_SairADM.Text = "Sair";
+            this.StripMenu_SairADM.Click += new System.EventHandler(this.testeToolStripMenuItem_Click);
             // 
-            // configuraçõesToolStripMenuItem
+            // StripMenu_ConfiguracoesADM
             // 
-            this.configuraçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.meuUsuarioToolStripMenuItem,
-            this.funcionariosToolStripMenuItem1});
-            this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
-            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.configuraçõesToolStripMenuItem.Text = "configurações";
+            this.StripMenu_ConfiguracoesADM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StripMenu_ConfUsuarioADM,
+            this.StripMenu_ConfFuncionariosADM});
+            this.StripMenu_ConfiguracoesADM.Name = "StripMenu_ConfiguracoesADM";
+            this.StripMenu_ConfiguracoesADM.Size = new System.Drawing.Size(180, 22);
+            this.StripMenu_ConfiguracoesADM.Text = "configurações";
             // 
-            // meuUsuarioToolStripMenuItem
+            // StripMenu_ConfUsuarioADM
             // 
-            this.meuUsuarioToolStripMenuItem.Name = "meuUsuarioToolStripMenuItem";
-            this.meuUsuarioToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.meuUsuarioToolStripMenuItem.Text = "Meu usuario";
+            this.StripMenu_ConfUsuarioADM.Name = "StripMenu_ConfUsuarioADM";
+            this.StripMenu_ConfUsuarioADM.Size = new System.Drawing.Size(180, 22);
+            this.StripMenu_ConfUsuarioADM.Text = "Meu usuario";
             // 
-            // funcionariosToolStripMenuItem1
+            // StripMenu_ConfFuncionariosADM
             // 
-            this.funcionariosToolStripMenuItem1.Name = "funcionariosToolStripMenuItem1";
-            this.funcionariosToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
-            this.funcionariosToolStripMenuItem1.Text = "Funcionarios";
+            this.StripMenu_ConfFuncionariosADM.Name = "StripMenu_ConfFuncionariosADM";
+            this.StripMenu_ConfFuncionariosADM.Size = new System.Drawing.Size(180, 22);
+            this.StripMenu_ConfFuncionariosADM.Text = "Funcionarios";
             // 
-            // cadastroToolStripMenuItem
+            // StripMenu_CadastroADM
             // 
-            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroClienteToolStripMenuItem,
-            this.cadastroFuncionarioToolStripMenuItem});
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.cadastroToolStripMenuItem.Text = "Cadastro";
-            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+            this.StripMenu_CadastroADM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StripMenu_CadClienteADM,
+            this.StripMenu_CadFuncionarioADM});
+            this.StripMenu_CadastroADM.Name = "StripMenu_CadastroADM";
+            this.StripMenu_CadastroADM.Size = new System.Drawing.Size(66, 20);
+            this.StripMenu_CadastroADM.Text = "Cadastro";
+            this.StripMenu_CadastroADM.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
             // 
-            // cadastroClienteToolStripMenuItem
+            // StripMenu_CadClienteADM
             // 
-            this.cadastroClienteToolStripMenuItem.Name = "cadastroClienteToolStripMenuItem";
-            this.cadastroClienteToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.cadastroClienteToolStripMenuItem.Text = "Cadastro Cliente";
-            this.cadastroClienteToolStripMenuItem.Click += new System.EventHandler(this.cadastroClienteToolStripMenuItem_Click);
+            this.StripMenu_CadClienteADM.Name = "StripMenu_CadClienteADM";
+            this.StripMenu_CadClienteADM.Size = new System.Drawing.Size(187, 22);
+            this.StripMenu_CadClienteADM.Text = "Cadastro Cliente";
+            this.StripMenu_CadClienteADM.Click += new System.EventHandler(this.cadastroClienteToolStripMenuItem_Click);
             // 
-            // cadastroFuncionarioToolStripMenuItem
+            // StripMenu_CadFuncionarioADM
             // 
-            this.cadastroFuncionarioToolStripMenuItem.Name = "cadastroFuncionarioToolStripMenuItem";
-            this.cadastroFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.cadastroFuncionarioToolStripMenuItem.Text = "Cadastro Funcionario";
-            this.cadastroFuncionarioToolStripMenuItem.Click += new System.EventHandler(this.cadastroFuncionarioToolStripMenuItem_Click);
+            this.StripMenu_CadFuncionarioADM.Name = "StripMenu_CadFuncionarioADM";
+            this.StripMenu_CadFuncionarioADM.Size = new System.Drawing.Size(187, 22);
+            this.StripMenu_CadFuncionarioADM.Text = "Cadastro Funcionario";
+            this.StripMenu_CadFuncionarioADM.Click += new System.EventHandler(this.cadastroFuncionarioToolStripMenuItem_Click);
             // 
             // relatoriosToolStripMenuItem
             // 
@@ -159,13 +159,13 @@ namespace Administrador
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem testeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroClienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroFuncionarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem meuUsuarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem funcionariosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_SairADM;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_CadastroADM;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_CadClienteADM;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_CadFuncionarioADM;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_ConfiguracoesADM;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_ConfUsuarioADM;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_ConfFuncionariosADM;
         private System.Windows.Forms.ToolStripMenuItem relatoriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem funcionariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Administrador
 {
-    public partial class FRM_CadastroFuncionario : Form
+    public partial class AmbienteTrabalhoFuncionario : Form
     {
-        public FRM_CadastroFuncionario()
+        public AmbienteTrabalhoFuncionario()
         {
             InitializeComponent();
-        }
-
-        private void FRM_CadastroFuncionario_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LBL_FoneCad_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
