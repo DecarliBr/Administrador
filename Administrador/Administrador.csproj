@@ -58,7 +58,7 @@
     <Compile Include="Administrador\CadastroFuncionario.Designer.cs">
       <DependentUpon>CadastroFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Conexao.cs" />
+    <Compile Include="Classes\ConexaoSqlClass.cs" />
     <Compile Include="Funcionario\AmbienteTrabalhoFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>

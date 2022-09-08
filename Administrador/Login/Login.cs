@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace Administrador
 {
     public partial class FRM_Login : Form
@@ -18,12 +19,10 @@ namespace Administrador
             InitializeComponent();
         }
 
-        SqlConnection conexao = new SqlConnection(@"Data Source = DESKTOP-O28HAT6; integrated Security = SSPI; Initial Catalog = Administrador");
-        SqlCommand comando = new SqlCommand();
-        SqlDataReader dr;
+        //SqlConnection conexao = new SqlConnection(@"Data Source = DESKTOP-O28HAT6; integrated Security = SSPI; Initial Catalog = Administrador");
+        
 
-        //String stringConexao;
-        //Conexao conexao = new Conexao(@"Data Source = DESKTOP-O28HAT6; integrated Security = SSPI; Initial Catalog = Administrador");
+        ConexaoSqlClass conexao = new ConexaoSqlClass();
 
 
         private void FRM_Login_Load(object sender, EventArgs e)
@@ -44,9 +43,10 @@ namespace Administrador
                 try
                 {
 
-                    conexao.Open();
+                    //conexao.Open();
+                    conexao.ConexaoOpen();
                     comando.CommandText = $"Select Email, senha from Usuarios where Email = ('{TXB_UsuarioLogin.Text}') and senha = ('{TXB_SenhaLogin.Text}')";
-                    comando.Connection = conexao;
+                    comando.Connection = conexao.conexaoDB;
                     dr = comando.ExecuteReader();
 
                     if (dr.HasRows)
