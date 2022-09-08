@@ -22,6 +22,10 @@ namespace Administrador
         SqlCommand comando = new SqlCommand();
         SqlDataReader dr;
 
+        //String stringConexao;
+        //Conexao conexao = new Conexao(@"Data Source = DESKTOP-O28HAT6; integrated Security = SSPI; Initial Catalog = Administrador");
+
+
         private void FRM_Login_Load(object sender, EventArgs e)
         {
 
@@ -39,6 +43,7 @@ namespace Administrador
             {
                 try
                 {
+
                     conexao.Open();
                     comando.CommandText = $"Select Email, senha from Usuarios where Email = ('{TXB_UsuarioLogin.Text}') and senha = ('{TXB_SenhaLogin.Text}')";
                     comando.Connection = conexao;
