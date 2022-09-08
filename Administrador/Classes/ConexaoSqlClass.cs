@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
-using System.Data;
 
 namespace Administrador
 {
@@ -29,6 +24,20 @@ namespace Administrador
             catch (Exception erro)
             {
                 throw new Exception(erro.Message);
+            }
+        }
+
+        public Boolean Command(String arg1,String arg2)
+        {
+            comando.CommandText = $"Select Email, senha from Usuarios where Email = ('{arg1}') and senha = ('{arg2}')";
+            comando.Connection = conexaoDB;
+            dr = comando.ExecuteReader();
+            if (dr.HasRows)
+            {
+                return true;
+            }else
+            {
+                return false;
             }
         }
         public void Close()
