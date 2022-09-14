@@ -77,6 +77,12 @@
     <Compile Include="Login\MainLogin.Designer.cs">
       <DependentUpon>MainLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrador\MeuUsuarioADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\MeuUsuarioADM.Designer.cs">
+      <DependentUpon>MeuUsuarioADM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrador\AmbienteTrabalhoADM.resx">
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login\MainLogin.resx">
       <DependentUpon>MainLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\MeuUsuarioADM.resx">
+      <DependentUpon>MeuUsuarioADM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

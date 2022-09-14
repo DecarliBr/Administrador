@@ -37,5 +37,12 @@ namespace Administrador
         {
             Close();
         }
+
+        private void StripMenu_ConfUsuarioADM_Click(object sender, EventArgs e)
+        {
+            FRM_MeuUsuarioADM Usuario = new FRM_MeuUsuarioADM();
+            Usuario.Show();
+            
+        }
     }
 }

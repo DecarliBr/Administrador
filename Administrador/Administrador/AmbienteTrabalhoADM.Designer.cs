@@ -86,6 +86,7 @@ namespace Administrador
             this.StripMenu_ConfUsuarioADM.Name = "StripMenu_ConfUsuarioADM";
             this.StripMenu_ConfUsuarioADM.Size = new System.Drawing.Size(180, 22);
             this.StripMenu_ConfUsuarioADM.Text = "Meu usuario";
+            this.StripMenu_ConfUsuarioADM.Click += new System.EventHandler(this.StripMenu_ConfUsuarioADM_Click);
             // 
             // StripMenu_ConfFuncionariosADM
             // 

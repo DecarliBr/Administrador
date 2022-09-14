@@ -74,6 +74,7 @@ namespace Administrador
             this.TXB_UsuarioLogin.Name = "TXB_UsuarioLogin";
             this.TXB_UsuarioLogin.Size = new System.Drawing.Size(344, 31);
             this.TXB_UsuarioLogin.TabIndex = 3;
+            this.TXB_UsuarioLogin.TextChanged += new System.EventHandler(this.TXB_UsuarioLogin_TextChanged);
             // 
             // TXB_SenhaLogin
             // 

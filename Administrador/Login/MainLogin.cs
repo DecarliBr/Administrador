@@ -26,7 +26,7 @@ namespace Administrador
                     // abrindo conexao com banco
                     conexao.ConexaoOpen();
                     //retornando validação do banco caso verdadeiro ou falso
-                    string arg1 = $"Select Email, senha from Usuarios where Email = ('{TXB_UsuarioLogin.Text}') and senha = ('{TXB_SenhaLogin.Text}')";
+                    string arg1 = $"Select Email, senha from Usuarios where Email = ('{TXB_UsuarioLogin}') and senha = ('{TXB_SenhaLogin.Text}')";
 
                     bool response = conexao.Command(arg1);
 
@@ -51,6 +51,11 @@ namespace Administrador
                     conexao.Close();
                 }
             }
+
+        }
+
+        public void TXB_UsuarioLogin_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
