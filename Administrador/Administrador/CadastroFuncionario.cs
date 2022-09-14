@@ -11,16 +11,14 @@ using System.Data.SqlClient;
 
 namespace Administrador
 {
+
     public partial class FRM_CadastroFuncionario : Form
     {
-
-        SqlConnection conexao = new SqlConnection(@"Data Source = DESKTOP-6F20152\SQLEXPRESS; integrated Security = SSPI; Initial Catalog = Administrador");
-        SqlCommand comando = new SqlCommand();
-        SqlDataReader dr;
+        ConexaoSqlClass SQL = new ConexaoSqlClass();
 
         public FRM_CadastroFuncionario()
         {   
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void FRM_CadastroFuncionario_Load(object sender, EventArgs e)
@@ -45,14 +43,20 @@ namespace Administrador
             {
                 try
                 {
-                    conexao.Open();
-                    comando.CommandText = $"insert into Cadastro_Funcionario (Nome, CPF, Endereço, Numero, Bairro, Complemento, Cidade" +
+                    SQL.ConexaoOpen();
+                    string arg1 = $"insert into Cadastro_Funcionario (Nome, CPF, Endereço, Numero, Bairro, Complemento, Cidade" +
                         $",Estado, Cep, Fone, Email, ADM) values ('{TXB_NomeCad.Text}','{TXB_CpfCad.Text}','{TXB_EnderecoCad.Text}','{TXB_NumeroCad.Text}'" +
                         $",'{TXB_BairroCad.Text}','{TXB_ComplementoCad.Text}','{TXB_CidadeCad.Text}','{CBOX_EstadoCad.Text}','{TXB_CepCad.Text}'" +
                         $",'{TXB_FoneCad.Text}','{TXB_EmailCad.Text}','{CHB_ADMorUser.Checked}')";
 
-                    comando.Connection = conexao;
-                    dr = comando.ExecuteReader();
+                    SQL.Command(arg1);
+
+                    //Cria email na tabela usuários
+                    string arg2 = $"insert into Usuarios (Email) values ('{TXB_EmailCad.Text}')";
+                    SQL.Command(arg2);
+
+
+
                     MessageBox.Show("Funcionario cadastrado com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Close();
 
@@ -63,7 +67,7 @@ namespace Administrador
                 }
                 finally
                 {
-                    dr.Close();
+                    SQL.Close();
                 }
             }
         }

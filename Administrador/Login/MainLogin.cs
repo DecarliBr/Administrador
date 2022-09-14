@@ -26,7 +26,10 @@ namespace Administrador
                     // abrindo conexao com banco
                     conexao.ConexaoOpen();
                     //retornando validação do banco caso verdadeiro ou falso
-                    bool response = conexao.Command(TXB_UsuarioLogin.Text, TXB_SenhaLogin.Text);
+                    string arg1 = $"Select Email, senha from Usuarios where Email = ('{TXB_UsuarioLogin.Text}') and senha = ('{TXB_SenhaLogin.Text}')";
+
+                    bool response = conexao.Command(arg1);
+
                     if (response)
                     {
                         FRM_AmbienteTrabalhoADM AT = new FRM_AmbienteTrabalhoADM();

@@ -22,10 +22,10 @@ namespace Administrador
             }
         }
 
-        public Boolean Command(String arg1,String arg2)
+        public Boolean Command(String arg1)
         {
             SqlCommand comando = new SqlCommand();//Objeto Command
-            comando.CommandText = $"Select Email, senha from Usuarios where Email = ('{arg1}') and senha = ('{arg2}')";
+            comando.CommandText = arg1;
             comando.Connection = conexaoDB;
             dr = comando.ExecuteReader();
             if (dr.HasRows)
@@ -40,5 +40,11 @@ namespace Administrador
         {
             conexaoDB.Close();
         }
+
+
+
+        //public string StringConnection = @"Data Source = DESKTOP-6F20152\SQLEXPRESS; integrated Security = SSPI; Initial Catalog = Administrador";//apontar caminho do banco de dados
+       // public SqlConnection DBConect;//abrir a conexao com banco de dados de acordo com caminho expecificado (Connect)
+        //SqlDataReader DataReader;// objeto DataReader
     }   
 }
