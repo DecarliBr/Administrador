@@ -25,3 +25,5 @@ C:\2.Meus_projetos\Administrador\Administrador\Administrador\obj\Debug\Administr
 C:\2.Meus_projetos\Administrador\Administrador\Administrador\obj\Debug\Administrador.pdb
 C:\Users\henri\Documents\ProjetosGit\Administrador\Administrador\Administrador\obj\Debug\Administrador.AmbienteTrabalhoFuncionario.resources
 C:\Users\henri\Documents\ProjetosGit\Administrador\Administrador\Administrador\obj\Debug\Administrador.FRM_CadastroCliente.resources
+C:\2.Meus_projetos\Administrador\Administrador\Administrador\obj\Debug\Administrador.AmbienteTrabalhoFuncionario.resources
+C:\2.Meus_projetos\Administrador\Administrador\Administrador\obj\Debug\Administrador.FRM_CadastroCliente.resources
