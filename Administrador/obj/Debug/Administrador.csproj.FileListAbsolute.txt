@@ -28,3 +28,7 @@ C:\Users\henri\Documents\ProjetosGit\Administrador\Administrador\Administrador\o
 C:\2.Meus_projetos\Administrador\Administrador\Administrador\obj\Debug\Administrador.AmbienteTrabalhoFuncionario.resources
 C:\2.Meus_projetos\Administrador\Administrador\Administrador\obj\Debug\Administrador.FRM_CadastroCliente.resources
 C:\Users\henri\Documents\ProjetosGit\Administrador\Administrador\Administrador\obj\Debug\Administrador.FRM_MeuUsuarioADM.resources
+C:\Users\henri\Documents\ProjetosGit\Administrador\Administrador\Administrador\bin\Debug\Administrador.exe.manifest
+C:\Users\henri\Documents\ProjetosGit\Administrador\Administrador\Administrador\bin\Debug\Administrador.application
+C:\Users\henri\Documents\ProjetosGit\Administrador\Administrador\Administrador\obj\Debug\Administrador.exe.manifest
+C:\Users\henri\Documents\ProjetosGit\Administrador\Administrador\Administrador\obj\Debug\Administrador.application

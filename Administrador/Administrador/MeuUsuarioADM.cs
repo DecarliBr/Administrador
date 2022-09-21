@@ -19,7 +19,8 @@ namespace Administrador
 
         private void TXB_UsuarioMuADM_TextChanged(object sender, EventArgs e)
         {
-            
+            FRM_Login user = new FRM_Login();
+
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Administrador
         private void FRM_Login_Load(object sender, EventArgs e)
         {
         }
-        private void BTN_EntrarLogin_Click(object sender, EventArgs e)
+        public void BTN_EntrarLogin_Click(object sender, EventArgs e)
         {
             if (TXB_UsuarioLogin.Text == "" || TXB_SenhaLogin.Text == "")
             {
@@ -57,6 +57,11 @@ namespace Administrador
         public void TXB_UsuarioLogin_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        public String LoginUser()
+        {
+            String LoginUser = TXB_UsuarioLogin.Text;
+            return LoginUser;
         }
     }
 }
