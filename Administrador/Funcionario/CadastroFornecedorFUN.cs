@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace Administrador
 {
-    public partial class FRM_CadastroFornecedorADM : Form
+    public partial class FRM_CadastroFornecedorFUN : Form
     {
-        public FRM_CadastroFornecedorADM()
+        public FRM_CadastroFornecedorFUN()
         {
             InitializeComponent();
         }
-        private void FRM_CadastroFornecedorADM_Load(object sender, EventArgs e)
+
+        private void LBL_CadFunADM_Click(object sender, EventArgs e)
         {
 
         }
+
         private void BTN_SalvarCadFornecedor_Click(object sender, EventArgs e)
         {
 

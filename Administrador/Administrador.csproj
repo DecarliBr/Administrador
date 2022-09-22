@@ -100,6 +100,12 @@
     <Compile Include="Funcionario\AmbienteTrabalhoFUN.Designer.cs">
       <DependentUpon>AmbienteTrabalhoFUN.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funcionario\CadastroFornecedorFUN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionario\CadastroFornecedorFUN.Designer.cs">
+      <DependentUpon>CadastroFornecedorFUN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login\MainLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Funcionario\AmbienteTrabalhoFUN.resx">
       <DependentUpon>AmbienteTrabalhoFUN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionario\CadastroFornecedorFUN.resx">
+      <DependentUpon>CadastroFornecedorFUN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\MainLogin.resx">
       <DependentUpon>MainLogin.cs</DependentUpon>

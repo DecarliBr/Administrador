@@ -1,7 +1,7 @@
 ﻿
 namespace Administrador
 {
-    partial class FRM_CadastroFornecedorADM
+    partial class FRM_CadastroFornecedorFUN
     {
         /// <summary>
         /// Required designer variable.
@@ -328,13 +328,13 @@ namespace Administrador
             // 
             this.LBL_CadastroFuncionario.AutoSize = true;
             this.LBL_CadastroFuncionario.Font = new System.Drawing.Font("Century Gothic", 23F);
-            this.LBL_CadastroFuncionario.Location = new System.Drawing.Point(130, 9);
+            this.LBL_CadastroFuncionario.Location = new System.Drawing.Point(131, 9);
             this.LBL_CadastroFuncionario.Name = "LBL_CadastroFuncionario";
             this.LBL_CadastroFuncionario.Size = new System.Drawing.Size(391, 37);
-            this.LBL_CadastroFuncionario.TabIndex = 55;
+            this.LBL_CadastroFuncionario.TabIndex = 56;
             this.LBL_CadastroFuncionario.Text = "Cadastro de Funcionario";
             // 
-            // FRM_CadastroFornecedorADM
+            // FRM_CadastroFornecedorFUN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -365,9 +365,8 @@ namespace Administrador
             this.Controls.Add(this.LBL_NomeCadFornecedor);
             this.Controls.Add(this.LBL_TelaCadastro);
             this.Controls.Add(this.LBL_CadFornecedor);
-            this.Name = "FRM_CadastroFornecedorADM";
-            this.Text = "CadastroCliente";
-            this.Load += new System.EventHandler(this.FRM_CadastroFornecedorADM_Load);
+            this.Name = "FRM_CadastroFornecedorFUN";
+            this.Text = "CadastroFornecedor";
             this.ResumeLayout(false);
             this.PerformLayout();
 
