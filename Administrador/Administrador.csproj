@@ -81,24 +81,24 @@
     <Compile Include="Administrador\AmbienteTrabalhoADM.Designer.cs">
       <DependentUpon>AmbienteTrabalhoADM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administrador\CadastroFuncionario.cs">
+    <Compile Include="Administrador\CadastroFornecedorADM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrador\CadastroFuncionario.Designer.cs">
-      <DependentUpon>CadastroFuncionario.cs</DependentUpon>
+    <Compile Include="Administrador\CadastroFornecedorADM.Designer.cs">
+      <DependentUpon>CadastroFornecedorADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\CadastroFuncionarioADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\CadastroFuncionarioADM.Designer.cs">
+      <DependentUpon>CadastroFuncionarioADM.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\ConexaoSqlClass.cs" />
-    <Compile Include="Funcionario\AmbienteTrabalhoFuncionario.cs">
+    <Compile Include="Funcionario\AmbienteTrabalhoFUN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Funcionario\AmbienteTrabalhoFuncionario.Designer.cs">
-      <DependentUpon>AmbienteTrabalhoFuncionario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Funcionario\CadastroCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Funcionario\CadastroCliente.Designer.cs">
-      <DependentUpon>CadastroCliente.cs</DependentUpon>
+    <Compile Include="Funcionario\AmbienteTrabalhoFUN.Designer.cs">
+      <DependentUpon>AmbienteTrabalhoFUN.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\MainLogin.cs">
       <SubType>Form</SubType>
@@ -117,14 +117,14 @@
     <EmbeddedResource Include="Administrador\AmbienteTrabalhoADM.resx">
       <DependentUpon>AmbienteTrabalhoADM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrador\CadastroFuncionario.resx">
-      <DependentUpon>CadastroFuncionario.cs</DependentUpon>
+    <EmbeddedResource Include="Administrador\CadastroFornecedorADM.resx">
+      <DependentUpon>CadastroFornecedorADM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Funcionario\AmbienteTrabalhoFuncionario.resx">
-      <DependentUpon>AmbienteTrabalhoFuncionario.cs</DependentUpon>
+    <EmbeddedResource Include="Administrador\CadastroFuncionarioADM.resx">
+      <DependentUpon>CadastroFuncionarioADM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Funcionario\CadastroCliente.resx">
-      <DependentUpon>CadastroCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Funcionario\AmbienteTrabalhoFUN.resx">
+      <DependentUpon>AmbienteTrabalhoFUN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\MainLogin.resx">
       <DependentUpon>MainLogin.cs</DependentUpon>

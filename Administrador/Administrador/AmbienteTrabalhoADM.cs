@@ -20,17 +20,19 @@ namespace Administrador
         {
             
         }
-
-        private void cadastroClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        //chamando tela de cadastro de Fornecedor
+        private void CadastroFornecedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            FRM_CadastroFornecedorADM Fornecedor = new FRM_CadastroFornecedorADM();
+            Fornecedor.MdiParent = this;
+            Fornecedor.Show();
         }
-
-        private void cadastroFuncionarioToolStripMenuItem_Click(object sender, EventArgs e)
+        //chamando tela de cadastro de funcionario
+        private void CadastroFuncionarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FRM_CadastroFuncionario F = new FRM_CadastroFuncionario();
-            F.MdiParent = this;
-            F.Show();
+            FRM_CadastroFuncionario Funcionario = new FRM_CadastroFuncionario();
+            Funcionario.MdiParent = this;
+            Funcionario.Show();
         }
 
         private void testeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -44,5 +46,11 @@ namespace Administrador
             Usuario.Show();
             
         }
+
+        private void FRM_AmbienteTrabalhoADM_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

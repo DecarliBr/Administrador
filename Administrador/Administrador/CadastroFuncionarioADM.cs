@@ -47,7 +47,7 @@ namespace Administrador
                     string arg1 = $"insert into Cadastro_Funcionario (Nome, CPF, Endereço, Numero, Bairro, Complemento, Cidade" +
                         $",Estado, Cep, Fone, Email, ADM) values ('{TXB_NomeCad.Text}','{TXB_CpfCad.Text}','{TXB_EnderecoCad.Text}','{TXB_NumeroCad.Text}'" +
                         $",'{TXB_BairroCad.Text}','{TXB_ComplementoCad.Text}','{TXB_CidadeCad.Text}','{CBOX_EstadoCad.Text}','{TXB_CepCad.Text}'" +
-                        $",'{TXB_FoneCad.Text}','{TXB_EmailCad.Text}','{CHB_ADMorUser.Checked}')";
+                        $",'{TXB_FoneCad.Text}','{TXB_EmailCad.Text}')";
 
                     SQL.Command(arg1);
 

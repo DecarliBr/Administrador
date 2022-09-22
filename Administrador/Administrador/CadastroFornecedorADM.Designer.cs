@@ -1,7 +1,7 @@
 ﻿
 namespace Administrador
 {
-    partial class FRM_CadastroCliente
+    partial class FRM_CadastroFornecedorADM
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,17 @@ namespace Administrador
         /// </summary>
         private void InitializeComponent()
         {
-            this.CBOX_EstadoCadCliente = new System.Windows.Forms.ComboBox();
-            this.TXB_EmailCadCliente = new System.Windows.Forms.TextBox();
-            this.TXB_FoneCadCliente = new System.Windows.Forms.TextBox();
-            this.TXB_CepCadCliente = new System.Windows.Forms.TextBox();
-            this.TXB_NumeroCadCliente = new System.Windows.Forms.TextBox();
-            this.TXB_CidadeCadCliente = new System.Windows.Forms.TextBox();
-            this.TXB_ComplementoCadCliente = new System.Windows.Forms.TextBox();
-            this.TXB_BairroCadCliente = new System.Windows.Forms.TextBox();
-            this.TXB_EnderecoCadCliente = new System.Windows.Forms.TextBox();
-            this.TXB_CpfCadCliente = new System.Windows.Forms.TextBox();
-            this.TXB_NomeCadCliente = new System.Windows.Forms.TextBox();
+            this.CBOX_EstadoCadFornecedor = new System.Windows.Forms.ComboBox();
+            this.TXB_EmailCadFornecedor = new System.Windows.Forms.TextBox();
+            this.TXB_FoneCadFornecedor = new System.Windows.Forms.TextBox();
+            this.TXB_CepCadFornecedor = new System.Windows.Forms.TextBox();
+            this.TXB_NumeroCadFornecedor = new System.Windows.Forms.TextBox();
+            this.TXB_CidadeCadFornecedor = new System.Windows.Forms.TextBox();
+            this.TXB_ComplementoCadFornecedor = new System.Windows.Forms.TextBox();
+            this.TXB_BairroCadFornecedor = new System.Windows.Forms.TextBox();
+            this.TXB_EnderecoCadFornecedor = new System.Windows.Forms.TextBox();
+            this.TXB_CpfCadFornecedor = new System.Windows.Forms.TextBox();
+            this.TXB_NomeCadFornecedor = new System.Windows.Forms.TextBox();
             this.LBL_EmailCad = new System.Windows.Forms.Label();
             this.LBL_FoneCad = new System.Windows.Forms.Label();
             this.LBL_CepCad = new System.Windows.Forms.Label();
@@ -52,15 +52,15 @@ namespace Administrador
             this.LBL_CpfCad = new System.Windows.Forms.Label();
             this.LBL_NomeCad = new System.Windows.Forms.Label();
             this.LBL_TelaCadastro = new System.Windows.Forms.Label();
-            this.LBL_CadFunADM = new System.Windows.Forms.Label();
+            this.LBL_CadForADM = new System.Windows.Forms.Label();
             this.BTN_SalvarCadCliente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // CBOX_EstadoCadCliente
+            // CBOX_EstadoCadFornecedor
             // 
-            this.CBOX_EstadoCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.CBOX_EstadoCadCliente.FormattingEnabled = true;
-            this.CBOX_EstadoCadCliente.Items.AddRange(new object[] {
+            this.CBOX_EstadoCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.CBOX_EstadoCadFornecedor.FormattingEnabled = true;
+            this.CBOX_EstadoCadFornecedor.Items.AddRange(new object[] {
             "AC",
             "AL",
             "AP",
@@ -88,90 +88,90 @@ namespace Administrador
             "SP",
             "SE",
             "TO"});
-            this.CBOX_EstadoCadCliente.Location = new System.Drawing.Point(253, 303);
-            this.CBOX_EstadoCadCliente.Name = "CBOX_EstadoCadCliente";
-            this.CBOX_EstadoCadCliente.Size = new System.Drawing.Size(59, 29);
-            this.CBOX_EstadoCadCliente.TabIndex = 52;
+            this.CBOX_EstadoCadFornecedor.Location = new System.Drawing.Point(253, 303);
+            this.CBOX_EstadoCadFornecedor.Name = "CBOX_EstadoCadFornecedor";
+            this.CBOX_EstadoCadFornecedor.Size = new System.Drawing.Size(59, 29);
+            this.CBOX_EstadoCadFornecedor.TabIndex = 52;
             // 
-            // TXB_EmailCadCliente
+            // TXB_EmailCadFornecedor
             // 
-            this.TXB_EmailCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.TXB_EmailCadCliente.Location = new System.Drawing.Point(318, 132);
-            this.TXB_EmailCadCliente.Name = "TXB_EmailCadCliente";
-            this.TXB_EmailCadCliente.Size = new System.Drawing.Size(321, 27);
-            this.TXB_EmailCadCliente.TabIndex = 51;
+            this.TXB_EmailCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.TXB_EmailCadFornecedor.Location = new System.Drawing.Point(318, 132);
+            this.TXB_EmailCadFornecedor.Name = "TXB_EmailCadFornecedor";
+            this.TXB_EmailCadFornecedor.Size = new System.Drawing.Size(321, 27);
+            this.TXB_EmailCadFornecedor.TabIndex = 51;
             // 
-            // TXB_FoneCadCliente
+            // TXB_FoneCadFornecedor
             // 
-            this.TXB_FoneCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.TXB_FoneCadCliente.Location = new System.Drawing.Point(381, 303);
-            this.TXB_FoneCadCliente.Name = "TXB_FoneCadCliente";
-            this.TXB_FoneCadCliente.Size = new System.Drawing.Size(258, 27);
-            this.TXB_FoneCadCliente.TabIndex = 50;
+            this.TXB_FoneCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.TXB_FoneCadFornecedor.Location = new System.Drawing.Point(381, 303);
+            this.TXB_FoneCadFornecedor.Name = "TXB_FoneCadFornecedor";
+            this.TXB_FoneCadFornecedor.Size = new System.Drawing.Size(258, 27);
+            this.TXB_FoneCadFornecedor.TabIndex = 50;
             // 
-            // TXB_CepCadCliente
+            // TXB_CepCadFornecedor
             // 
-            this.TXB_CepCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.TXB_CepCadCliente.Location = new System.Drawing.Point(73, 303);
-            this.TXB_CepCadCliente.Name = "TXB_CepCadCliente";
-            this.TXB_CepCadCliente.Size = new System.Drawing.Size(107, 27);
-            this.TXB_CepCadCliente.TabIndex = 49;
+            this.TXB_CepCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.TXB_CepCadFornecedor.Location = new System.Drawing.Point(73, 303);
+            this.TXB_CepCadFornecedor.Name = "TXB_CepCadFornecedor";
+            this.TXB_CepCadFornecedor.Size = new System.Drawing.Size(107, 27);
+            this.TXB_CepCadFornecedor.TabIndex = 49;
             // 
-            // TXB_NumeroCadCliente
+            // TXB_NumeroCadFornecedor
             // 
-            this.TXB_NumeroCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.TXB_NumeroCadCliente.Location = new System.Drawing.Point(562, 269);
-            this.TXB_NumeroCadCliente.Name = "TXB_NumeroCadCliente";
-            this.TXB_NumeroCadCliente.Size = new System.Drawing.Size(77, 27);
-            this.TXB_NumeroCadCliente.TabIndex = 48;
+            this.TXB_NumeroCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.TXB_NumeroCadFornecedor.Location = new System.Drawing.Point(562, 269);
+            this.TXB_NumeroCadFornecedor.Name = "TXB_NumeroCadFornecedor";
+            this.TXB_NumeroCadFornecedor.Size = new System.Drawing.Size(77, 27);
+            this.TXB_NumeroCadFornecedor.TabIndex = 48;
             // 
-            // TXB_CidadeCadCliente
+            // TXB_CidadeCadFornecedor
             // 
-            this.TXB_CidadeCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.TXB_CidadeCadCliente.Location = new System.Drawing.Point(91, 269);
-            this.TXB_CidadeCadCliente.Name = "TXB_CidadeCadCliente";
-            this.TXB_CidadeCadCliente.Size = new System.Drawing.Size(430, 27);
-            this.TXB_CidadeCadCliente.TabIndex = 47;
+            this.TXB_CidadeCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.TXB_CidadeCadFornecedor.Location = new System.Drawing.Point(91, 269);
+            this.TXB_CidadeCadFornecedor.Name = "TXB_CidadeCadFornecedor";
+            this.TXB_CidadeCadFornecedor.Size = new System.Drawing.Size(430, 27);
+            this.TXB_CidadeCadFornecedor.TabIndex = 47;
             // 
-            // TXB_ComplementoCadCliente
+            // TXB_ComplementoCadFornecedor
             // 
-            this.TXB_ComplementoCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.TXB_ComplementoCadCliente.Location = new System.Drawing.Point(146, 235);
-            this.TXB_ComplementoCadCliente.Name = "TXB_ComplementoCadCliente";
-            this.TXB_ComplementoCadCliente.Size = new System.Drawing.Size(493, 27);
-            this.TXB_ComplementoCadCliente.TabIndex = 46;
+            this.TXB_ComplementoCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.TXB_ComplementoCadFornecedor.Location = new System.Drawing.Point(146, 235);
+            this.TXB_ComplementoCadFornecedor.Name = "TXB_ComplementoCadFornecedor";
+            this.TXB_ComplementoCadFornecedor.Size = new System.Drawing.Size(493, 27);
+            this.TXB_ComplementoCadFornecedor.TabIndex = 46;
             // 
-            // TXB_BairroCadCliente
+            // TXB_BairroCadFornecedor
             // 
-            this.TXB_BairroCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.TXB_BairroCadCliente.Location = new System.Drawing.Point(73, 201);
-            this.TXB_BairroCadCliente.Name = "TXB_BairroCadCliente";
-            this.TXB_BairroCadCliente.Size = new System.Drawing.Size(566, 27);
-            this.TXB_BairroCadCliente.TabIndex = 45;
+            this.TXB_BairroCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.TXB_BairroCadFornecedor.Location = new System.Drawing.Point(73, 201);
+            this.TXB_BairroCadFornecedor.Name = "TXB_BairroCadFornecedor";
+            this.TXB_BairroCadFornecedor.Size = new System.Drawing.Size(566, 27);
+            this.TXB_BairroCadFornecedor.TabIndex = 45;
             // 
-            // TXB_EnderecoCadCliente
+            // TXB_EnderecoCadFornecedor
             // 
-            this.TXB_EnderecoCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.TXB_EnderecoCadCliente.Location = new System.Drawing.Point(100, 167);
-            this.TXB_EnderecoCadCliente.Name = "TXB_EnderecoCadCliente";
-            this.TXB_EnderecoCadCliente.Size = new System.Drawing.Size(539, 27);
-            this.TXB_EnderecoCadCliente.TabIndex = 44;
+            this.TXB_EnderecoCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.TXB_EnderecoCadFornecedor.Location = new System.Drawing.Point(100, 167);
+            this.TXB_EnderecoCadFornecedor.Name = "TXB_EnderecoCadFornecedor";
+            this.TXB_EnderecoCadFornecedor.Size = new System.Drawing.Size(539, 27);
+            this.TXB_EnderecoCadFornecedor.TabIndex = 44;
             // 
-            // TXB_CpfCadCliente
+            // TXB_CpfCadFornecedor
             // 
-            this.TXB_CpfCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.TXB_CpfCadCliente.Location = new System.Drawing.Point(73, 133);
-            this.TXB_CpfCadCliente.Name = "TXB_CpfCadCliente";
-            this.TXB_CpfCadCliente.Size = new System.Drawing.Size(177, 27);
-            this.TXB_CpfCadCliente.TabIndex = 43;
+            this.TXB_CpfCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.TXB_CpfCadFornecedor.Location = new System.Drawing.Point(73, 133);
+            this.TXB_CpfCadFornecedor.Name = "TXB_CpfCadFornecedor";
+            this.TXB_CpfCadFornecedor.Size = new System.Drawing.Size(177, 27);
+            this.TXB_CpfCadFornecedor.TabIndex = 43;
             // 
-            // TXB_NomeCadCliente
+            // TXB_NomeCadFornecedor
             // 
-            this.TXB_NomeCadCliente.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.TXB_NomeCadCliente.Location = new System.Drawing.Point(73, 99);
-            this.TXB_NomeCadCliente.Name = "TXB_NomeCadCliente";
-            this.TXB_NomeCadCliente.Size = new System.Drawing.Size(566, 27);
-            this.TXB_NomeCadCliente.TabIndex = 42;
+            this.TXB_NomeCadFornecedor.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.TXB_NomeCadFornecedor.Location = new System.Drawing.Point(73, 99);
+            this.TXB_NomeCadFornecedor.Name = "TXB_NomeCadFornecedor";
+            this.TXB_NomeCadFornecedor.Size = new System.Drawing.Size(566, 27);
+            this.TXB_NomeCadFornecedor.TabIndex = 42;
             // 
             // LBL_EmailCad
             // 
@@ -305,17 +305,17 @@ namespace Administrador
             this.LBL_TelaCadastro.Text = "Preencha as informações abaixo para cadastro de novo cliente";
             this.LBL_TelaCadastro.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // LBL_CadFunADM
+            // LBL_CadForADM
             // 
-            this.LBL_CadFunADM.AutoSize = true;
-            this.LBL_CadFunADM.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_CadFunADM.Location = new System.Drawing.Point(93, 9);
-            this.LBL_CadFunADM.Name = "LBL_CadFunADM";
-            this.LBL_CadFunADM.Size = new System.Drawing.Size(365, 42);
-            this.LBL_CadFunADM.TabIndex = 29;
-            this.LBL_CadFunADM.Text = "Cadastro de Cliente";
-            this.LBL_CadFunADM.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.LBL_CadFunADM.Click += new System.EventHandler(this.LBL_CadFunADM_Click);
+            this.LBL_CadForADM.AutoSize = true;
+            this.LBL_CadForADM.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBL_CadForADM.Location = new System.Drawing.Point(93, 9);
+            this.LBL_CadForADM.Name = "LBL_CadForADM";
+            this.LBL_CadForADM.Size = new System.Drawing.Size(444, 42);
+            this.LBL_CadForADM.TabIndex = 29;
+            this.LBL_CadForADM.Text = "Cadastro de Fornecedor";
+            this.LBL_CadForADM.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LBL_CadForADM.Click += new System.EventHandler(this.LBL_CadFunADM_Click);
             // 
             // BTN_SalvarCadCliente
             // 
@@ -327,23 +327,23 @@ namespace Administrador
             this.BTN_SalvarCadCliente.Text = "Salvar";
             this.BTN_SalvarCadCliente.UseVisualStyleBackColor = true;
             // 
-            // FRM_CadastroCliente
+            // FRM_CadastroFornecedorADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(654, 384);
             this.Controls.Add(this.BTN_SalvarCadCliente);
-            this.Controls.Add(this.CBOX_EstadoCadCliente);
-            this.Controls.Add(this.TXB_EmailCadCliente);
-            this.Controls.Add(this.TXB_FoneCadCliente);
-            this.Controls.Add(this.TXB_CepCadCliente);
-            this.Controls.Add(this.TXB_NumeroCadCliente);
-            this.Controls.Add(this.TXB_CidadeCadCliente);
-            this.Controls.Add(this.TXB_ComplementoCadCliente);
-            this.Controls.Add(this.TXB_BairroCadCliente);
-            this.Controls.Add(this.TXB_EnderecoCadCliente);
-            this.Controls.Add(this.TXB_CpfCadCliente);
-            this.Controls.Add(this.TXB_NomeCadCliente);
+            this.Controls.Add(this.CBOX_EstadoCadFornecedor);
+            this.Controls.Add(this.TXB_EmailCadFornecedor);
+            this.Controls.Add(this.TXB_FoneCadFornecedor);
+            this.Controls.Add(this.TXB_CepCadFornecedor);
+            this.Controls.Add(this.TXB_NumeroCadFornecedor);
+            this.Controls.Add(this.TXB_CidadeCadFornecedor);
+            this.Controls.Add(this.TXB_ComplementoCadFornecedor);
+            this.Controls.Add(this.TXB_BairroCadFornecedor);
+            this.Controls.Add(this.TXB_EnderecoCadFornecedor);
+            this.Controls.Add(this.TXB_CpfCadFornecedor);
+            this.Controls.Add(this.TXB_NomeCadFornecedor);
             this.Controls.Add(this.LBL_EmailCad);
             this.Controls.Add(this.LBL_FoneCad);
             this.Controls.Add(this.LBL_CepCad);
@@ -356,8 +356,8 @@ namespace Administrador
             this.Controls.Add(this.LBL_CpfCad);
             this.Controls.Add(this.LBL_NomeCad);
             this.Controls.Add(this.LBL_TelaCadastro);
-            this.Controls.Add(this.LBL_CadFunADM);
-            this.Name = "FRM_CadastroCliente";
+            this.Controls.Add(this.LBL_CadForADM);
+            this.Name = "FRM_CadastroFornecedorADM";
             this.Text = "CadastroCliente";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -365,17 +365,17 @@ namespace Administrador
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox CBOX_EstadoCadCliente;
-        private System.Windows.Forms.TextBox TXB_EmailCadCliente;
-        private System.Windows.Forms.TextBox TXB_FoneCadCliente;
-        private System.Windows.Forms.TextBox TXB_CepCadCliente;
-        private System.Windows.Forms.TextBox TXB_NumeroCadCliente;
-        private System.Windows.Forms.TextBox TXB_CidadeCadCliente;
-        private System.Windows.Forms.TextBox TXB_ComplementoCadCliente;
-        private System.Windows.Forms.TextBox TXB_BairroCadCliente;
-        private System.Windows.Forms.TextBox TXB_EnderecoCadCliente;
-        private System.Windows.Forms.TextBox TXB_CpfCadCliente;
-        private System.Windows.Forms.TextBox TXB_NomeCadCliente;
+        private System.Windows.Forms.ComboBox CBOX_EstadoCadFornecedor;
+        private System.Windows.Forms.TextBox TXB_EmailCadFornecedor;
+        private System.Windows.Forms.TextBox TXB_FoneCadFornecedor;
+        private System.Windows.Forms.TextBox TXB_CepCadFornecedor;
+        private System.Windows.Forms.TextBox TXB_NumeroCadFornecedor;
+        private System.Windows.Forms.TextBox TXB_CidadeCadFornecedor;
+        private System.Windows.Forms.TextBox TXB_ComplementoCadFornecedor;
+        private System.Windows.Forms.TextBox TXB_BairroCadFornecedor;
+        private System.Windows.Forms.TextBox TXB_EnderecoCadFornecedor;
+        private System.Windows.Forms.TextBox TXB_CpfCadFornecedor;
+        private System.Windows.Forms.TextBox TXB_NomeCadFornecedor;
         private System.Windows.Forms.Label LBL_EmailCad;
         private System.Windows.Forms.Label LBL_FoneCad;
         private System.Windows.Forms.Label LBL_CepCad;
@@ -388,7 +388,7 @@ namespace Administrador
         private System.Windows.Forms.Label LBL_CpfCad;
         private System.Windows.Forms.Label LBL_NomeCad;
         private System.Windows.Forms.Label LBL_TelaCadastro;
-        private System.Windows.Forms.Label LBL_CadFunADM;
+        private System.Windows.Forms.Label LBL_CadForADM;
         private System.Windows.Forms.Button BTN_SalvarCadCliente;
     }
 }

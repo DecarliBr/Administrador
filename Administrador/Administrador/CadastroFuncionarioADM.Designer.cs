@@ -53,7 +53,6 @@ namespace Administrador
             this.TXB_FoneCad = new System.Windows.Forms.TextBox();
             this.TXB_EmailCad = new System.Windows.Forms.TextBox();
             this.CBOX_EstadoCad = new System.Windows.Forms.ComboBox();
-            this.CHB_ADMorUser = new System.Windows.Forms.CheckBox();
             this.BTN_SalvarCad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -63,9 +62,9 @@ namespace Administrador
             this.LBL_CadFunADM.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBL_CadFunADM.Location = new System.Drawing.Point(89, 9);
             this.LBL_CadFunADM.Name = "LBL_CadFunADM";
-            this.LBL_CadFunADM.Size = new System.Drawing.Size(443, 42);
+            this.LBL_CadFunADM.Size = new System.Drawing.Size(444, 42);
             this.LBL_CadFunADM.TabIndex = 0;
-            this.LBL_CadFunADM.Text = "Cadastro de Funcionario";
+            this.LBL_CadFunADM.Text = "Cadastro de Fornecedor";
             this.LBL_CadFunADM.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // LBL_TelaCadastro
@@ -318,18 +317,6 @@ namespace Administrador
             this.CBOX_EstadoCad.Size = new System.Drawing.Size(59, 29);
             this.CBOX_EstadoCad.TabIndex = 24;
             // 
-            // CHB_ADMorUser
-            // 
-            this.CHB_ADMorUser.AutoSize = true;
-            this.CHB_ADMorUser.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.CHB_ADMorUser.Location = new System.Drawing.Point(377, 343);
-            this.CHB_ADMorUser.Name = "CHB_ADMorUser";
-            this.CHB_ADMorUser.Size = new System.Drawing.Size(163, 25);
-            this.CHB_ADMorUser.TabIndex = 28;
-            this.CHB_ADMorUser.Text = "É administrador ?";
-            this.CHB_ADMorUser.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.CHB_ADMorUser.UseVisualStyleBackColor = true;
-            // 
             // BTN_SalvarCad
             // 
             this.BTN_SalvarCad.Font = new System.Drawing.Font("Century Gothic", 12F);
@@ -347,7 +334,6 @@ namespace Administrador
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(654, 405);
             this.Controls.Add(this.BTN_SalvarCad);
-            this.Controls.Add(this.CHB_ADMorUser);
             this.Controls.Add(this.CBOX_EstadoCad);
             this.Controls.Add(this.TXB_EmailCad);
             this.Controls.Add(this.TXB_FoneCad);
@@ -406,7 +392,6 @@ namespace Administrador
         private System.Windows.Forms.TextBox TXB_FoneCad;
         private System.Windows.Forms.TextBox TXB_EmailCad;
         private System.Windows.Forms.ComboBox CBOX_EstadoCad;
-        private System.Windows.Forms.CheckBox CHB_ADMorUser;
         private System.Windows.Forms.Button BTN_SalvarCad;
     }
 }

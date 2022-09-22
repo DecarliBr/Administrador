@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Administrador
 {
-    public partial class AmbienteTrabalhoFuncionario : Form
+    public partial class FRM_CadastroFornecedorADM : Form
     {
-        public AmbienteTrabalhoFuncionario()
+        public FRM_CadastroFornecedorADM()
         {
             InitializeComponent();
+        }
+
+        private void LBL_CadFunADM_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

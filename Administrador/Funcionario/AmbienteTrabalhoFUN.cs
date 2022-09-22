@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Administrador
 {
-    public partial class FRM_CadastroCliente : Form
+    public partial class AmbienteTrabalhoFuncionario : Form
     {
-        public FRM_CadastroCliente()
+        public AmbienteTrabalhoFuncionario()
         {
             InitializeComponent();
         }
 
-        private void LBL_CadFunADM_Click(object sender, EventArgs e)
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
