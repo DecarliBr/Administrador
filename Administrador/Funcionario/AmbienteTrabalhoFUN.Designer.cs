@@ -31,14 +31,14 @@ namespace Administrador
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.StripMenu_SairFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu_ConfiguracoesFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu_ConfUsuarioFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenu_SairFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroFornecedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estoqueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,12 +68,6 @@ namespace Administrador
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
             // 
-            // StripMenu_SairFuncionario
-            // 
-            this.StripMenu_SairFuncionario.Name = "StripMenu_SairFuncionario";
-            this.StripMenu_SairFuncionario.Size = new System.Drawing.Size(180, 22);
-            this.StripMenu_SairFuncionario.Text = "Sair";
-            // 
             // StripMenu_ConfiguracoesFuncionario
             // 
             this.StripMenu_ConfiguracoesFuncionario.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -85,24 +79,15 @@ namespace Administrador
             // StripMenu_ConfUsuarioFuncionario
             // 
             this.StripMenu_ConfUsuarioFuncionario.Name = "StripMenu_ConfUsuarioFuncionario";
-            this.StripMenu_ConfUsuarioFuncionario.Size = new System.Drawing.Size(140, 22);
+            this.StripMenu_ConfUsuarioFuncionario.Size = new System.Drawing.Size(180, 22);
             this.StripMenu_ConfUsuarioFuncionario.Text = "Meu usuario";
+            this.StripMenu_ConfUsuarioFuncionario.Click += new System.EventHandler(this.StripMenu_ConfUsuarioFuncionario_Click);
             // 
-            // relatoriosToolStripMenuItem
+            // StripMenu_SairFuncionario
             // 
-            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clientesToolStripMenuItem,
-            this.estoqueToolStripMenuItem});
-            this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
-            this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.relatoriosToolStripMenuItem.Text = "Relatorios";
-            // 
-            // clientesToolStripMenuItem
-            // 
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clientesToolStripMenuItem.Text = "Fornecedor";
-            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            this.StripMenu_SairFuncionario.Name = "StripMenu_SairFuncionario";
+            this.StripMenu_SairFuncionario.Size = new System.Drawing.Size(180, 22);
+            this.StripMenu_SairFuncionario.Text = "Sair";
             // 
             // cadastroToolStripMenuItem
             // 
@@ -118,6 +103,7 @@ namespace Administrador
             this.cadastroFornecedorToolStripMenuItem.Name = "cadastroFornecedorToolStripMenuItem";
             this.cadastroFornecedorToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.cadastroFornecedorToolStripMenuItem.Text = "Cadastro Fornecedor";
+            this.cadastroFornecedorToolStripMenuItem.Click += new System.EventHandler(this.cadastroFornecedorToolStripMenuItem_Click);
             // 
             // cadastroProdutoToolStripMenuItem
             // 
@@ -125,10 +111,26 @@ namespace Administrador
             this.cadastroProdutoToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.cadastroProdutoToolStripMenuItem.Text = "Cadastro Produto";
             // 
+            // relatoriosToolStripMenuItem
+            // 
+            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientesToolStripMenuItem,
+            this.estoqueToolStripMenuItem});
+            this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
+            this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.relatoriosToolStripMenuItem.Text = "Relatorios";
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.clientesToolStripMenuItem.Text = "Fornecedor";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
             // estoqueToolStripMenuItem
             // 
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.estoqueToolStripMenuItem.Text = "Estoque";
             // 
             // estoqueToolStripMenuItem1
@@ -143,13 +145,13 @@ namespace Administrador
             // inventarioToolStripMenuItem
             // 
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
-            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.inventarioToolStripMenuItem.Text = "Inventario";
             // 
             // localizarProdutoToolStripMenuItem
             // 
             this.localizarProdutoToolStripMenuItem.Name = "localizarProdutoToolStripMenuItem";
-            this.localizarProdutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.localizarProdutoToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.localizarProdutoToolStripMenuItem.Text = "Localizar Produto";
             // 
             // AmbienteTrabalhoFuncionario

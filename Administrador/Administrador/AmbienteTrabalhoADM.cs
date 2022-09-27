@@ -20,7 +20,7 @@ namespace Administrador
         {
             
         }
-        //chamando tela de cadastro de Fornecedor
+        //chamando tela de cadastro de Fornecedor ADM
         private void CadastroFornecedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FRM_CadastroFornecedorADM Fornecedor = new FRM_CadastroFornecedorADM();
@@ -39,10 +39,11 @@ namespace Administrador
         {
             Close();
         }
-
+        //chamando tela de configuração do meu usuario
         private void StripMenu_ConfUsuarioADM_Click(object sender, EventArgs e)
         {
             FRM_MeuUsuarioADM Usuario = new FRM_MeuUsuarioADM();
+            Usuario.MdiParent = this;
             Usuario.Show();
             
         }

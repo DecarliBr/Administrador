@@ -367,6 +367,7 @@ namespace Administrador
             this.Controls.Add(this.LBL_CadFornecedor);
             this.Name = "FRM_CadastroFornecedorFUN";
             this.Text = "CadastroFornecedor";
+            this.Load += new System.EventHandler(this.FRM_CadastroFornecedorFUN_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

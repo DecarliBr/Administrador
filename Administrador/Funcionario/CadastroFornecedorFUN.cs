@@ -26,5 +26,10 @@ namespace Administrador
         {
 
         }
+
+        private void FRM_CadastroFornecedorFUN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
